@@ -14,13 +14,12 @@ struct Time
         return s;
     }
 
-    Time sumTime(Time t1, Time t2)
+    Time sumTime(Time t)
     {
-        Time t;
 
-        t.hours = t1.hours + t2.hours;
-        t.minutes = t1.minutes + t2.minutes;
-        t.seconds = t1.seconds + t2.seconds;
+        t.hours = t.hours + hours;
+        t.minutes = t.minutes + minutes;
+        t.seconds = t.seconds + seconds;
 
         if (t.minutes >= 60)
         {
@@ -36,13 +35,12 @@ struct Time
         return t;
     }
 
-    Time subTime(Time t1, Time t2)
+    Time subTime(Time t)
     {
-        Time t;
 
-        t.hours = t1.hours - t2.hours;
-        t.minutes = t1.minutes - t2.minutes;
-        t.seconds = t1.seconds - t2.seconds;
+        t.hours = t.hours - hours;
+        t.minutes = t.minutes - minutes;
+        t.seconds = t.seconds - seconds;
 
         if (t.minutes < 0)
         {
@@ -84,8 +82,8 @@ int main()
 
     Time t1 = InputTime();
     Time t2 = InputTime();
-    Time t3 = t3.sumTime(t1, t2);
-    Time t4 = t4.subTime(t1, t2);
+    Time t3 = t2.sumTime(t1);
+    Time t4 = t2.subTime(t1);
 
     t1.ShowTime();
     t2.ShowTime();
