@@ -1,4 +1,4 @@
-#include "Dot.h"
+﻿#include "Dot.h"
 #include <math.h>
 using namespace std;
 

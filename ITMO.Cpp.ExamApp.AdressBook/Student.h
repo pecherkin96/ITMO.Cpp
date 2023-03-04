@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <vector>
 #include <fstream>
 #include "Person.h"
@@ -15,7 +15,7 @@ public:
 	void toFile();
 
 private:
-	string rank = "Студент";
+	string rank = "РЎС‚СѓРґРµРЅС‚";
 	vector<int> marks;
 	string group_num;
 };

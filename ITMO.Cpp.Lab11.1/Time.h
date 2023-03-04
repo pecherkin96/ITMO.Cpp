@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 using namespace std;
 
 class Time
@@ -26,7 +26,7 @@ public:
 
 	class NumberErr {
 	public:
-		NumberErr() : message("Ошибка ввода целых чисел") { }
+		NumberErr() : message("РћС€РёР±РєР° РІРІРѕРґР° С†РµР»С‹С… С‡РёСЃРµР»") { }
 		void printMessage() const { cout << message << endl; }
 	private:
 		string message;

@@ -1,4 +1,4 @@
-#include "Student.h"
+ï»¿#include "Student.h"
 
 using namespace std;
 
@@ -17,8 +17,8 @@ void Student::input()
 {
 	Person::input();
 	int n;
-	cout << "Ââåäèòå íîìåð ãðóïïû ñòóäåíòà: "<< endl; cin >> group_num;
-	cout << "Äîáàâëåíèå îöåíîê ñòóäåíòà(íàæìèòå q ÷òîáû çàêîí÷èòü): "<< endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: "<< endl; cin >> group_num;
+	cout << "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¾Ñ†ÐµÐ½Ð¾Ðº ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°(Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ q Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ): "<< endl;
 	while (cin >> n)
 		marks.push_back(n);
 	cin.clear();
@@ -27,10 +27,10 @@ void Student::input()
 
 void Student::show()
 {
-	cout << "Äîëæíîñòü: " << rank << endl;
+	cout << "Ð”Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ: " << rank << endl;
 	Person::show();
-	cout << "Ãðóïïà: " << group_num << endl;
-	cout << "Îöåíêè: ";
+	cout << "Ð“Ñ€ÑƒÐ¿Ð¿Ð°: " << group_num << endl;
+	cout << "ÐžÑ†ÐµÐ½ÐºÐ¸: ";
 	for (auto x : marks)
 		cout << x << " ";
 	cout << endl;
@@ -39,12 +39,12 @@ void Student::show()
 void Student::toFile()
 {
 	ofstream out("AddressBook.txt", ios::app);
-	out << "Äîëæíîñòü: " << rank << endl;
-	out << "Èìÿ: " << getFirstName() << endl;
-	out << "Ôàìèëèÿ: " << getLastName() << endl;
-	out << "Òåëåôîí: " << getPhoneNum() << endl;
-	out << "Íîìåð ãðóïïû: " << group_num << endl;
-	out << "Îöåíêè: ";
+	out << "Ð”Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ: " << rank << endl;
+	out << "Ð˜Ð¼Ñ: " << getFirstName() << endl;
+	out << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: " << getLastName() << endl;
+	out << "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½: " << getPhoneNum() << endl;
+	out << "ÐÐ¾Ð¼ÐµÑ€ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹: " << group_num << endl;
+	out << "ÐžÑ†ÐµÐ½ÐºÐ¸: ";
 	for (auto x : marks)
 		out << x << " ";
 	out << "\n------------------------------------------------------" << endl;

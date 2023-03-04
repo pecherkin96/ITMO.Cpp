@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Person.h"
 #include <fstream>
 class Educator : public Person
@@ -11,7 +11,7 @@ public:
 	void toFile();
 
 private:
-	string rank = "Преподователь";
+	string rank = "РџСЂРµРїРѕРґРѕРІР°С‚РµР»СЊ";
 	string degree;
 	string department;
 };

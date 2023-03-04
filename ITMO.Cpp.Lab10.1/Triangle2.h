@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Dot.h"
 using namespace std;
 

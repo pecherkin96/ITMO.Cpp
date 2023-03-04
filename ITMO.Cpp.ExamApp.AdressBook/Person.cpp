@@ -1,4 +1,4 @@
-#include "Person.h"
+ï»¿#include "Person.h"
 using namespace std;
 
 Person::Person()
@@ -14,15 +14,15 @@ int Person::getPhoneNum() { return phone_num; }
 
 void Person::input()
 {
-	cout << "Ôàìèëèÿ: "; cin >> last_name;
-	cout << "Èìÿ: "; cin >> first_name;
-	cout << "Òåëåôîí: "; cin >> phone_num;
+	cout << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: "; cin >> last_name;
+	cout << "Ð˜Ð¼Ñ: "; cin >> first_name;
+	cout << "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½: "; cin >> phone_num;
 }
 
 void Person::show()
 {
-	cout << "Ôàìèëèÿ: " << last_name << endl;
-	cout << "Èìÿ: " << first_name << endl;
-	cout << "Òåëåôîí: " << phone_num << endl;
+	cout << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: " << last_name << endl;
+	cout << "Ð˜Ð¼Ñ: " << first_name << endl;
+	cout << "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½: " << phone_num << endl;
 }
 

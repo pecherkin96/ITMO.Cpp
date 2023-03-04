@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <windows.h>
 #include "Time.h"
 using namespace std;
@@ -11,7 +11,7 @@ int main()
 	int h, m, s;
 
 	try {
-		cout << "Ââåäèòå: ÷àñû, ìèíóòû, ñåêóíäû: " << endl;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ: Ñ‡Ð°ÑÑ‹, Ð¼Ð¸Ð½ÑƒÑ‚Ñ‹, ÑÐµÐºÑƒÐ½Ð´Ñ‹: " << endl;
 		if (!(cin >> h >> m >> s))
 			throw Time::NumberErr();
 
@@ -22,8 +22,8 @@ int main()
 		bool t = t1 > t2;
 		Time t5 = 65 + t1;
 		Time t6 = t2 + 70;
-		cout << "Ñëîæèëè äâà îáúåêòà: "; t3.showTime();
-		cout << "Âû÷ëè äâà îáúåêòà: "; t4.showTime();
+		cout << "Ð¡Ð»Ð¾Ð¶Ð¸Ð»Ð¸ Ð´Ð²Ð° Ð¾Ð±ÑŠÐµÐºÑ‚Ð°: "; t3.showTime();
+		cout << "Ð’Ñ‹Ñ‡Ð»Ð¸ Ð´Ð²Ð° Ð¾Ð±ÑŠÐµÐºÑ‚Ð°: "; t4.showTime();
 		cout << t << endl;
 		t5.showTime();
 		t6.showTime();

@@ -1,4 +1,4 @@
-#include "Triangle2.h"
+﻿#include "Triangle2.h"
 #include <math.h>
 using namespace std;
 

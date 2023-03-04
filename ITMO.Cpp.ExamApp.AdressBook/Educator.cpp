@@ -1,4 +1,4 @@
-#include "Educator.h"
+ï»¿#include "Educator.h"
 
 Educator::Educator()
 {
@@ -14,26 +14,26 @@ Educator::~Educator()
 void Educator::input()
 {
 	Person::input();
-	cout << "Ââåäèòå ó÷¸íóþ ñòåïåíü: "<< endl; cin >> degree;
-	cout << "Ââåäèòå âàøó êàôåäðó: " << endl; cin >> department;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑƒÑ‡Ñ‘Ð½ÑƒÑŽ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: "<< endl; cin >> degree;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð°ÑˆÑƒ ÐºÐ°Ñ„ÐµÐ´Ñ€Ñƒ: " << endl; cin >> department;
 }
 
 void Educator::show()
 {
 	Person::show();
-	cout << "Ó÷¸íàÿ ñòåïåíü: " << degree << endl;
-	cout << "Êàôåäðà: " << department << endl;
+	cout << "Ð£Ñ‡Ñ‘Ð½Ð°Ñ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: " << degree << endl;
+	cout << "ÐšÐ°Ñ„ÐµÐ´Ñ€Ð°: " << department << endl;
 }
 
 void Educator::toFile()
 {
 	ofstream out("AddressBook.txt", ios::app);
-	out << "Äîëæíîñòü: " << rank << endl;
-	out << "Èìÿ: " << getFirstName() << endl;
-	out << "Ôàìèëèÿ: " << getLastName() << endl;
-	out << "Òåëåôîí: " << getPhoneNum() << endl;
-	out << "Ó÷¸íàÿ ñòåïåíü: " << degree << endl;
-	out << "Êàôåäðà: " << department << endl;
+	out << "Ð”Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ: " << rank << endl;
+	out << "Ð˜Ð¼Ñ: " << getFirstName() << endl;
+	out << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: " << getLastName() << endl;
+	out << "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½: " << getPhoneNum() << endl;
+	out << "Ð£Ñ‡Ñ‘Ð½Ð°Ñ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: " << degree << endl;
+	out << "ÐšÐ°Ñ„ÐµÐ´Ñ€Ð°: " << department << endl;
 	out << "\n------------------------------------------------------" << endl;
 	out.close();
 }

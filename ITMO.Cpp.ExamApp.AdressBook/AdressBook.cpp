@@ -1,11 +1,11 @@
-#include "AdressBook.h"
+ï»¿#include "AdressBook.h"
 
 void AdressBook::addNote()
 {
 	string choice_person;
 	string choice;
 	do {
-		cout << "Çàïèñàòü ñòóäåíòà èëè ïðåïîäîâàòåëÿ? Íàæìèòå 's' äëÿ ñòóäåíòà, 'e' äëÿ ïðåïîäîâàòåëÿ. " << endl;
+		cout << "Ð—Ð°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð° Ð¸Ð»Ð¸ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ? ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 's' Ð´Ð»Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°, 'e' Ð´Ð»Ñ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ. " << endl;
 		cin >> choice_person;
 		if (choice_person == "s")
 		{
@@ -18,7 +18,7 @@ void AdressBook::addNote()
 			notes[number_notes]->input();
 		}
 		number_notes++;
-		cout << "Äîáàâèòü åù¸ ëþäåé? Íàæìèòå 'y' åñëè ñîãëàñíû, 'n' åñëè çàêîí÷èòü."<< endl;
+		cout << "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÑ‰Ñ‘ Ð»ÑŽÐ´ÐµÐ¹? ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 'y' ÐµÑÐ»Ð¸ ÑÐ¾Ð³Ð»Ð°ÑÐ½Ñ‹, 'n' ÐµÑÐ»Ð¸ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ."<< endl;
 		cin >> choice;
 	} while (choice == "y");
 }
